@@ -1,5 +1,6 @@
 import Herosection from "./components/Herosection";
 import Navbar from "./components/Navbar";
+import Parallax from "./components/Parallax";
 
 export default function App() {
   return (
@@ -9,10 +10,10 @@ export default function App() {
         <Herosection />
       </section>
       <section id="Services" className="h-[100vh] snap-center">
-        parallax
+        <Parallax mode="what we do" />
       </section>
       <section className="h-[100vh] snap-center" id="Portfolio">
-        parallax
+        <Parallax mode="what we have done" />
       </section>
       <section className="h-[100vh] snap-center">portfolio1</section>
       <section className="h-[100vh] snap-center">portfolio2</section>

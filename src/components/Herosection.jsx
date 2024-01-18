@@ -22,6 +22,20 @@ const textAnimations = {
     },
   },
 };
+const sliderAnimations = {
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: "-220%",
+
+    transition: {
+      duration: 20,
+      repeatType: "mirror",
+      repeat: Infinity,
+    },
+  },
+};
 
 function Herosection() {
   return (
@@ -68,9 +82,14 @@ function Herosection() {
           />
         </motion.div>
       </div>
-      <div className="whitespace-nowrap -bottom-32 text-[50vh] absolute text-white/5">
+      <motion.div
+        className="whitespace-nowrap -bottom-32 text-[50vh] absolute text-white/5 w-[50%] font-bold"
+        variants={sliderAnimations}
+        initial="initial"
+        animate="animate"
+      >
         3D graphic designer space
-      </div>
+      </motion.div>
       <div>
         <img
           src="/public/assets/hero.png"

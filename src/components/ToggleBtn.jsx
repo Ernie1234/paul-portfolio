@@ -1,10 +1,11 @@
+import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 
 function ToggleBtn({ setOpen }) {
   return (
     <button
       onClick={() => setOpen((prev) => !prev)}
-      className="w-12 h-12 round-full top-6 fixed bg-transparent border-none left-6 cursor-pointer"
+      className="w-12 h-12 round-full top-[1.8rem] left-10 fixed bg-transparent border-none cursor-pointer"
     >
       <svg width="23" height="23" viewBox="0 0 23 23">
         <motion.path
@@ -36,5 +37,9 @@ function ToggleBtn({ setOpen }) {
     </button>
   );
 }
+
+ToggleBtn.propTypes = {
+  setOpen: PropTypes.bool,
+};
 
 export default ToggleBtn;

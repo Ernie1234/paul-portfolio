@@ -49,7 +49,7 @@ function Herosection() {
         >
           <motion.h1
             variants={textAnimations}
-            className="text-3xl text-purple-500 tracking-wide"
+            className="text-3xl text-yellow-500 tracking-wide"
           >
             Anumah Paul Omeiza
           </motion.h1>
@@ -62,13 +62,13 @@ function Herosection() {
           <motion.div variants={textAnimations} className="flex gap-5">
             <motion.button
               variants={textAnimations}
-              className="font-light p-5 border border-white bg-transparent"
+              className="font-semibold py-3 px-5  border border-white bg-black hover:bg-white cursor-pointer"
             >
               see the lastest works
             </motion.button>
             <motion.button
               variants={textAnimations}
-              className="font-light p-5 border border-white bg-white text-black"
+              className="font-semibold py-3 px-5 border border-white bg-yellow-500 text-black"
             >
               Contact Me
             </motion.button>
@@ -76,7 +76,7 @@ function Herosection() {
           <motion.img
             variants={textAnimations}
             animate="scrollBtn"
-            src="/public/assets/scroll.png"
+            src="/assets/scroll.png"
             alt="scroll"
             className="w-12"
           />
@@ -92,7 +92,7 @@ function Herosection() {
       </motion.div>
       <div>
         <img
-          src="/public/assets/hero.png"
+          src="/assets/hero.png"
           alt="hero"
           className="h-full absolute top-0 right-0"
         />

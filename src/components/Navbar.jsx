@@ -18,8 +18,15 @@ function Navbar() {
         <div className="flex gap-5">
           <a href="#">
             <img
-              src="/public/assets/facebook.png"
+              src="/assets/facebook.png"
               alt="facebook"
+              className="w-16 h-16"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/assets/dribbble.png"
+              alt="dribbble"
               className="w-16 h-16"
             />
           </a>
